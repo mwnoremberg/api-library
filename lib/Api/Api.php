@@ -122,13 +122,11 @@ class Api implements LoggerAwareInterface
     /**
      * Sets a logger.
      *
-     * @return $this
+     * @return void
      */
-    public function setLogger(LoggerInterface $logger)
+    public function setLogger(LoggerInterface $logger) : void
     {
         $this->logger = $logger;
-
-        return $this;
     }
 
     /**
